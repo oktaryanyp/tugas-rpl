@@ -21,7 +21,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    
     z-index: -1;
     filter: grayscale();
 }
@@ -75,7 +75,7 @@ html{
 background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    
 }
 
 /* mobile */
@@ -86,5 +86,5 @@ background-repeat: no-repeat;
 background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    
 }
