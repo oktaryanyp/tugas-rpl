@@ -72,6 +72,10 @@ html{
     html{
     font-size: 65%;
 }
+background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* mobile */
@@ -79,4 +83,8 @@ html{
     html{
     font-size: 60%;
 }
+background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
