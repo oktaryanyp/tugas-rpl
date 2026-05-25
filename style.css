@@ -220,7 +220,16 @@ html{
     font-size: 2rem;
     text-align: center;
 }
-    
+ 
+.sticky-top {
+    overflow: hidden;
+}
+
 }
 
 /* mobile */
+@media (max-width  :576px){
+    html{
+    font-size: 60%;
+}
+}
