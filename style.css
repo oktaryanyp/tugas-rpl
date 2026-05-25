@@ -232,4 +232,8 @@ html{
     html{
     font-size: 60%;
 }
+.mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+}
 }
