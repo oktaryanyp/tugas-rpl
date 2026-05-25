@@ -66,6 +66,7 @@ backdrop-filter: blur(4px);
 
 .mynavbar .offcanvas {
     height: 100vh;
+
 }
 
 .mynavbar .navbar-brand, 
@@ -73,6 +74,7 @@ backdrop-filter: blur(4px);
     font-family: 'Sacramento', cursive;
     font-size: 3.2rem;
     font-weight: bold;
+    color: black;
 }
 
 .mynavbar .nav-link {
@@ -214,7 +216,7 @@ html{
     html{
     font-size: 65%;
 }
-background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
@@ -230,7 +232,7 @@ background-repeat: no-repeat;
     html{
     font-size: 60%;
 }
-background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     
