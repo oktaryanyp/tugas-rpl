@@ -195,7 +195,7 @@ backdrop-filter: blur(4px);
 }
 
 /* laptop */
-@media (max-width  :992px){
+@media (min-width  :991px){
 html{
     font-size: 75%;
 }
@@ -211,7 +211,7 @@ html{
 
 /* tablet */
 
-@media (max-width  :768px){
+@media (min-width  :767px){
     html{
     font-size: 65%;
 }
@@ -227,7 +227,7 @@ html{
 }
 
 /* mobile */
-@media (max-width  :576px){
+@media (min-width  :543px){
     html{
     font-size: 60%;
 }
