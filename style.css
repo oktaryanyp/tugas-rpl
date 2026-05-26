@@ -404,7 +404,7 @@ html{
 }
 
 /* mobile */
-@media (max-width  :576px){
+@media (max-width  :376px){
     html{
     font-size: 60%;
 }
