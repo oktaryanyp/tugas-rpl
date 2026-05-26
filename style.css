@@ -358,6 +358,24 @@ html{
     float: right;
 }
 
+.timeline li .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+.timeline li .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+}
+
+.timeline li .timeline-image {
+    width: 120px;
+    height: 120px;
+}
 
 }
 
@@ -375,6 +393,11 @@ html{
  
 .sticky-top {
     overflow: hidden;
+}
+
+.timeline li .timeline-image {
+    width: 100px;
+    height: 100px;
 }
 
 
