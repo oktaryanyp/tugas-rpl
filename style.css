@@ -93,7 +93,8 @@ backdrop-filter: blur(4px);
 
 .home h2,
 .info h2,
-.story h2 {
+.story h2,
+.gallery h2 {
     color: var(--pink);
     font-family: 'Sacramento';
     font-size: 5rem;
@@ -181,12 +182,12 @@ backdrop-filter: blur(4px);
     font-weight: 300;
 }
 
-.story {
+.story, .gallery {
     padding-top: 10rem;
     padding-bottom: 8rem;
 }
 
-.story span {
+.story span, .gallery span {
     text-transform: uppercase;
     color: #666;
     font-size: 0.9rem;
@@ -195,7 +196,7 @@ backdrop-filter: blur(4px);
     margin-bottom: 1rem;
 }
 
-.story p {
+.story p, .gallery p {
     font-size: 1rem;
     font-weight: 300;
 }
@@ -297,10 +298,12 @@ backdrop-filter: blur(4px);
     right: auto;
 }
 
+.gallery {
+    background-color: #ffedf2;
+}
 
 
-
-
+ 
 
 
 
