@@ -28,7 +28,7 @@
         class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center 
         align-items-center text-white">
         <main>
-            <h4>Kepada Bapak/Ibu/Saudara/i,  </h4>
+            <h4>Kepada Bapak/Ibu/Saudara/i,  <span></span></h4>
             <h1>Arjung & Rocita</h1>
             <p>Akan melangsungkan resepsi pernikahan dalam:</p>
             <div class="simply-countdown simplyCountdown"></div>
@@ -364,25 +364,31 @@
 
 <footer>
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col text-center">
         <small class="block">&copy 2028 P&M Wedding</small>
-
         <ul class="mt-3">
-          <li><a href=""><i class="bi bi-instagram"></i></a></li>
+          <li><a href="https:instagram.com"><i class="bi bi-instagram"></i></a></li>
           <li><a href=""><i class="bi bi-twitter-x"></i></a></li>
           <li><a href=""><i class="bi bi-tiktok"></i></a></li>
           <li><a href=""><i class="bi bi-threads"></i></a></li>
           <li><a href=""><i class="bi bi-facebook"></i></a></li>
         </ul>
       </div>
-    </div>
-  
-    
+    </div>    
 </div> 
 </footer>
 
+ <div id="audio-container">
+  <audio id="bgm" autoplay loop>
+    <source src="audio/Nadin Amizah - Berpayung Tuhan.mp3" type="audio/mp3">
+  </audio>
 
+  <div class="audio-icon-wrapper" style="display: none;">
+    <i class="bi bi-disc"></i>
+  </div>
+
+ </div>
 
 
 
@@ -441,6 +447,11 @@
   
   <script>
     const rootElement = document.querySelector (":root");
+    const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+    const audioIcon = document.querySelector('.audio-icon-wrapper i')
+    const bgm = document.querySelector('#bgm');
+    let isPlaying = false;
+
     function disableScroll () {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
@@ -456,16 +467,50 @@
     function enableScroll() {
       window.onscroll = function() {}
       rootElement.style.scrollBehavior = 'smooth';
-      localStorage.setItem('opened', 'true');
+      //localStorage.setItem('opened', 'true');
+      playAuduio();
     }
-    
-    if(!localStorage.getItem('opened')){
-      disableScroll();
+
+    function playAuduio() {
+      bgm.volume = 0.5;
+      audioIconWrapper.style.display = 'flex';
+      bgm.play();
+      isPlaying = true;
     }
+
+
+    audioIconWrapper.onclick = function() {
+     if (isPlaying) {
+      bgm.pause();
+      audioIcon.classList.remove('bi-disc');
+      audioIcon.classList.add('bi-pause-circle');
+    } else {
+      bgm.play();
+      audioIcon.classList.add('bi-disc');
+      audioIcon.classList.remove('bi-pause-circle');
+     }
+
+     isPlaying = !isPlaying;
+    }
+
+    
+    //if(!localStorage.getItem('opened')){
+    //  disableScroll();
+    //}
+
+    disableScroll();
     
     
-    </script>
-    
+  </script>
+  
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const nama = urlParams.get('nama');
+    console.log(nama);
+
+    const namaContainer = document.querySelector('.hero h4 span');
+    namaContainer.innerText = nama;
+  </script>
 
   </body>
 </html>
